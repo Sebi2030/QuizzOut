@@ -1,21 +1,11 @@
 # QuizzyPedia
 
-Unsere App-Idee: Eine Wer Wird Millionär-App mit den folgenden Hauptfunktionen:
+Unsere App-Idee: Eine Wer Wird Millionär-App zu entwickeln, die das klassische Spielprinzip dieses beliebten TV-Quizshows nachahmt. Benutzer werden die Möglichkeit haben, sich zu registrieren und personalisierte Profile zu erstellen. In der Quiz-Modus werden sie vor eine Vielzahl von Fragen gestellt, die in ihrem Schwierigkeitsgrad steigen. Mit jeder richtigen Antwort verdienen sie virtuelles Geld, das in einem Highscore-System verfolgt wird.
 
-Benutzerregistrierung: Nutzer können sich anmelden und ein Profil erstellen, das ihre persönlichen Daten speichert.
-
-Quiz-Modus: Die App bietet ein Quiz-Spiel im Stil von "Wer wird Millionär?" an, bei dem die Benutzer Fragen mit steigendem Schwierigkeitsgrad beantworten und virtuelles Geld gewinnen können.
-
-Highscore-Verfolgung: Die App speichert die besten Leistungen der Benutzer und erstellt eine Highscore-Tabelle, um Wettbewerb und Motivation zu fördern.
-
-Lifelines: Die Spieler haben die Möglichkeit, "Lifelines" zu verwenden, um bei schwierigen Fragen Hilfe zu erhalten.
-
-Wertversprechen: Unsere App bietet Unterhaltung und Wissenserweiterung in Form eines beliebten Quizspiels. Benutzer können sich mit Freunden und anderen Spielern messen und ihre Quiz-Fähigkeiten verbessern. Die App ermöglicht es auch, Erfolge zu verfolgen und die besten Spieler zu belohnen.
+Das Wertversprechen unserer App liegt in der Kombination von Bildung und Unterhaltung. Benutzer können nicht nur ihre allgemeine Wissensbasis erweitern, sondern auch ihre Fähigkeiten und Kenntnisse in verschiedenen Kategorien testen. Die App bietet nicht nur Spaß und Spannung, sondern auch die Möglichkeit, sich mit anderen Spielern zu messen und in der Highscore-Tabelle aufzusteigen.
 
 Ziele:
 
-Gruppenziel: Die App soll eine spannende und ansprechende Plattform für Quizliebhaber bieten. Wir streben an, eine wachsende Benutzerbasis und positive Bewertungen zu erzielen.
+Gruppenziel: Unser übergeordnetes Ziel ist es, eine fesselnde Plattform für Quizliebhaber zu schaffen, die sowohl unterhaltsam als auch informativ ist. Wir möchten eine wachsende Benutzerbasis anziehen und die App in den App-Stores gut bewerten lassen. Wir streben an, eine aktive Community von Spielern zu etablieren, die sich regelmäßig an unseren Quiz-Spielen beteiligen.
 
-Persönliche Ziele der Teammitglieder: Jedes Teammitglied sollte dazu beitragen, die App erfolgreich zu entwickeln, wobei die individuellen Fähigkeiten und Interessen berücksichtigt werden. Dies kann die Verbesserung von Programmierfähigkeiten, das Design der Benutzeroberfläche oder das Marketing der App umfassen.
-
-Unser Ziel ist es, eine ansprechende Quiz-App zu entwickeln, die sowohl Spaß macht als auch Wissen vermittelt, und dabei die individuellen Ziele und Stärken der Teammitglieder einbezieht.
+Persönliche Ziele der Teammitglieder: Jedes Mitglied unseres Teams hat individuelle Ziele und Verantwortlichkeiten. Einige Mitglieder konzentrieren sich möglicherweise auf die Entwicklung der App, die Sicherstellung ihrer reibungslosen Funktion und Benutzerfreundlichkeit. Andere können sich auf das Design der Benutzeroberfläche und die visuelle Gestaltung konzentrieren, um sicherzustellen, dass die App ansprechend aussieht. Teammitglieder im Marketing und in der Promotion könnten sich darauf konzentrieren, die Benutzerbasis zu vergrößern und die App bekannter zu machen. Unser gemeinsames Ziel ist es, unsere individuellen Stärken und Fähigkeiten zu nutzen, um die App erfolgreich zu gestalten und zu fördern.
