@@ -1,8 +1,8 @@
 # QuizzyPedia
 
-Unsere App-Idee: Eine Wer Wird Millionär-App zu entwickeln, die das klassische Spielprinzip dieses beliebten TV-Quizshows nachahmt. Benutzer werden die Möglichkeit haben, sich zu registrieren und personalisierte Profile zu erstellen. In der Quiz-Modus werden sie vor eine Vielzahl von Fragen gestellt, die in ihrem Schwierigkeitsgrad steigen. Mit jeder richtigen Antwort verdienen sie virtuelles Geld, das in einem Highscore-System verfolgt wird.
+Unsere Webanwendungsidee besteht darin, eine Online-Version des beliebten "Wer wird Millionär?"-Quizspiels zu entwickeln, die über Webbrowser auf verschiedenen Geräten, einschließlich Desktops und mobilen Geräten, zugänglich ist. Benutzer können sich auf der Website registrieren und personalisierte Profile erstellen. In dem Quiz-Modus werden sie vor eine Vielzahl von Fragen gestellt, deren Schwierigkeitsgrad allmählich steigt. Mit jeder richtigen Antwort verdienen sie virtuelles Geld, das in einem Highscore-System verfolgt wird.
 
-Das Wertversprechen unserer App liegt in der Kombination von Bildung und Unterhaltung. Benutzer können nicht nur ihre allgemeine Wissensbasis erweitern, sondern auch ihre Fähigkeiten und Kenntnisse in verschiedenen Kategorien testen. Die App bietet nicht nur Spaß und Spannung, sondern auch die Möglichkeit, sich mit anderen Spielern zu messen und in der Highscore-Tabelle aufzusteigen.
+Das Wertversprechen unserer Webanwendung liegt in der Bereitstellung von Bildung und Unterhaltung auf bequeme und zugängliche Weise über das Internet. Benutzer können ihre allgemeinen Kenntnisse verbessern, ihre Fähigkeiten in verschiedenen Kategorien testen und sich mit anderen Spielern messen. Die Website bietet nicht nur Unterhaltung und Spannung, sondern auch die Möglichkeit, sich mit anderen zu vernetzen und in der Highscore-Tabelle aufzusteigen.
 
 Ziele:
 
