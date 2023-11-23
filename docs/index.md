@@ -10,8 +10,7 @@ nav_order: 0
 
 # [Project Name]
 
-[Project description]
-
+QuizzOut
 ## Team members
 
 ### [Jane Dane]
