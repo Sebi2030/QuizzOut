@@ -4,8 +4,7 @@ parent: Team Evaluation
 nav_order: 4
 ---
 
-{: .label }
-[Jane Dane]
+
 
 # [Summary of individual contributions]
 {: .no_toc }
