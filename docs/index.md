@@ -6,7 +6,7 @@
 
 ## Team members
 
-### Sebastian Nieme
+### Sebastian Lukas Nieme
 
 About
 22 Jahre alt und studiert Wirtschaftsinformatik an der HWR Berlin.
