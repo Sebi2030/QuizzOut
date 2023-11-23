@@ -9,13 +9,14 @@
 ### Sebastian Nieme
 
 About
-22 Jahre alt und studiert Wirtschaftsinformatik an der HWR Berlin
+22 Jahre alt und studiert Wirtschaftsinformatik an der HWR Berlin.
+
 Matr.-Nr.
 : 77211933626
 ### Abinesh Gulasingam
 
 About
-21 Jahre alt und studiert Wirtschaftsinformatik an der HWR Berlin
+21 Jahre alt und studiert Wirtschaftsinformatik an der HWR Berlin.
 
 Matr.-Nr.
 : 77211933927
