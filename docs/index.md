@@ -8,26 +8,24 @@ nav_order: 0
 >
 > You may delete this `attention` box.
 
-# [Project Name]
+# QuizzOut
 
-QuizzOut
+
 ## Team members
 
-### [Jane Dane]
+### Sebastian Nieme
 
 About
-: Some info about Jane
-
+22 Jahre alt und studiert Wirtschaftsinformatik an der HWR Berlin
 Matr.-Nr.
-: 1234567
-
-### [Joe Doe]
+: 77211933626
+### Abinesh Gulasingam
 
 About
-: Some info about Joe
+21 Jahre alt und studiert Wirtschaftsinformatik an der HWR Berlin
 
 Matr.-Nr.
-: 1234567
+: 77211933927
 
 ## Eidesstattliche Erklärung
 
