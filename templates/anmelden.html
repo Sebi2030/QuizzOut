@@ -57,10 +57,24 @@
         button:hover {
             background-color: #0056b3;
         }
+<<<<<<< HEAD
     </style>
 </head>
 <body>
     <form method="POST" action="/anmelden">
+=======
+
+        /* Stil für den Erfolgshinweis */
+        #erfolgshinweis {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/anmelden" id="anmeldeFormular">
+>>>>>>> 441617b9d0998ddd3c15b1ccc3762a9ee7631e8d
         <h1>Anmelden</h1>
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required>
@@ -70,5 +84,20 @@
         <br>
         <button type="submit">Anmelden</button>
     </form>
+
+    <div id="erfolgshinweis">
+        <p>Anmeldung erfolgreich! Sie werden in 5 Sekunden weitergeleitet.</p>
+    </div>
+
+    <script>
+        // JavaScript für die Anzeige des Erfolgshinweises und die Weiterleitung nach 5 Sekunden
+        document.getElementById('anmeldeFormular').addEventListener('submit', function (event) {
+            event.preventDefault(); // Verhindert das Standardformularverhalten
+            document.getElementById('erfolgshinweis').style.display = 'block';
+            setTimeout(function () {
+                window.location.href = '/'; // Hier die URL anpassen, falls nötig
+            }, 5000);
+        });
+    </script>
 </body>
 </html>

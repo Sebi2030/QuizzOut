@@ -52,16 +52,27 @@ def registrieren():
 
         vorhandener_benutzer = Benutzer.query.filter_by(email=email).first()
         if vorhandener_benutzer:
-            flash('Dieser Benutzer existiert bereits.', 'error')
+            flash('Diese E-Mail ist bereits registriert. Bitte melden Sie sich an oder verwenden Sie eine andere E-Mail.', 'error')
         else:
             passwort_hash = bcrypt.generate_password_hash(passwort).decode('utf-8')
             neuer_benutzer = Benutzer(benutzername=benutzername, email=email, passwort=passwort_hash)
             db.session.add(neuer_benutzer)
             db.session.commit()
             flash('Ihr Konto wurde erstellt. Sie können sich jetzt anmelden.', 'success')
-            return redirect(url_for('anmelden'))
+
+            # Füge hier die Zeile für die Umleitung hinzu
+            return redirect(url_for('index'))
 
     return render_template('registrieren.html')
+
+
+
+
+
+    print("Nicht im POST")
+    return render_template('registrieren.html')
+
+
 
 @app.route('/anmelden', methods=['GET', 'POST'])
 def anmelden():
@@ -70,13 +81,16 @@ def anmelden():
         passwort = request.form.get('passwort')
 
         benutzer = Benutzer.query.filter_by(email=email).first()
-        if benutzer and bcrypt.check_password_hash(benutzer.passwort, passwort):
-            login_user(benutzer)
-            return redirect(url_for('profil'))
-        else:
-            flash('Anmeldung fehlgeschlagen. Bitte überprüfen Sie Ihre Eingaben.', 'error')
+        if benutzer:
+            if bcrypt.check_password_hash(benutzer.passwort, passwort):
+                login_user(benutzer)
+                next_page = request.args.get('next')
+                return redirect(next_page or url_for('profil'))
+
+        flash('Anmeldung fehlgeschlagen. Bitte überprüfen Sie Ihre Eingaben.', 'error')
 
     return render_template('anmelden.html')
+# ...
 
 @app.route('/profil')
 @login_required
@@ -112,5 +126,9 @@ def antworten():
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
+<<<<<<< HEAD
     app.run(debug=True, host='0.0.0.0', port=5000)
 
+=======
+    app.run(debug=True, host='127.0.0.1', port=5000)
+>>>>>>> 441617b9d0998ddd3c15b1ccc3762a9ee7631e8d
