@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- FontAweSome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- Start Quiz button -->
+    <div class="start_btn"><button>Quiz Starten</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Einige Regeln für dieses Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Du hast nur <span>15 Sekunden</span> für jede Frage.</div>
+            <div class="info">2. Sobald du deine Antwort auswählst, kann sie nicht rückgängig gemacht werden.</div>
+            <div class="info">3. Du kannst keine Option auswählen, wenn die Zeit abgelaufen ist.</div>
+            <div class="info">4. Du kannst das Quiz nicht verlassen, während du spielst.</div>
+            <div class="info">5. Du bekommst Punkte basierend auf deinen korrekten Antworten.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Startseite</button>
+            <button class="restart">Fortsetzen</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz Anwendung</div>
+            <div class="timer">
+                <div class="time_left_txt">Verbleibende Zeit</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Hier wird die Frage aus JavaScript eingefügt -->
+            </div>
+            <div class="option_list">
+                <!-- Hier werden die Optionen aus JavaScript eingefügt -->
+            </div>
+            <div class="explanation_text">
+
+            </div>
+        </section>
+
+        <!-- Footer des Quiz-Fensters -->
+        <footer>
+            <div class="total_que">
+                <!-- Hier wird die Anzahl der Fragen aus JavaScript eingefügt -->
+            </div>
+            <button class="next_btn">Nächste Frage</button>
+        </footer>
+    </div>
+
+    <!-- Resultat Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Du hast das Quiz abgeschlossen!</div>
+        <div class="score_text">
+            <!-- Hier wird das Ergebnis aus JavaScript eingefügt -->
+        </div>
+        <div class="marks_text">
+
+        </div>
+        <div class="buttons">
+            <button class="restart">Quiz Wiederholen</button>
+            <a href="{{ url_for('quiz_high_score_result') }}" class="reset">Highscore Übersicht</a>
+            <button class="quit">Startseite</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

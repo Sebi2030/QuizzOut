@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmelden</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .error-message {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-main">
+        <div class="login-form">
+            <form method="post" novalidate>
+                <div class="login-intro">
+                    <h1>Login zu <br> QuizzOut</h1>
+                </div>
+                {{ form.hidden_tag() }}
+                <div class="form-para">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="..."></path>
+                    </svg>
+                    {{ form.benutzername(placeholder="benutzername") }}
+                </div>
+                <div class="form-para">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-key" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="..."></path>
+                    </svg>
+                    {{ form.passwort(placeholder="passwort") }}
+                </div>
+                <div class="form-para">
+                    <p>Passwort vergessen? {{ form.submit(class="btn btn-primary") }}</p>
+                </div>
+                <div class="form-para">
+                    <p>Neuer Benutzer? <a href="{{ url_for('register') }}">Klicken zum Registrieren!</a></p>
+                </div>
+                
+                {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                    <div class="error-message">
+                      {% for message in messages %}
+                        {{ message }}
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                {% endwith %}
+                
+            </form>
+    
+</body>
+
+</html>
