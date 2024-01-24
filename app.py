@@ -1,134 +1,268 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, session, g, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from flask_bcrypt import Bcrypt
-from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
-from sqlalchemy.orm import relationship
-import random
+from flask_migrate import Migrate
+from werkzeug.urls import url_parse
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, RadioField
+from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
+from sqlalchemy import desc
+from datetime import datetime
+from sqlalchemy import or_
+import os
+import logging
+
+basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'geheimeschlüssel'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///benutzer.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'benutzer.db')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-bcrypt = Bcrypt(app)
-login_manager = LoginManager(app)
-login_manager.login_view = 'anmelden'
 
-@login_manager.user_loader
-def load_user(user_id):
-    return Benutzer.query.get(int(user_id))
 
-class Benutzer(db.Model, UserMixin):
+class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    benutzername = db.Column(db.String(20), unique=True, nullable=False)
-    email = db.Column(db.String(120), unique=True, nullable=False)
-    passwort = db.Column(db.String(60), nullable=False)
+    benutzername = db.Column(db.String(64), index=True, unique=True)
+    email = db.Column(db.String(120), index=True, unique=True)
+    passwort_hash = db.Column(db.String(128))
+    marks = db.Column(db.Integer, index=True)
 
-class Frage(db.Model):
+    def __repr__(self):
+        return '<User {}>'.format(self.benutzername)
+
+    def set_password(self, passwort):  
+        self.passwort_hash = generate_password_hash(passwort)
+    
+    def check_password(self, passwort):  
+        return check_password_hash(self.passwort_hash, passwort)
+
+class QuizQuestion(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    text = db.Column(db.String(255), nullable=False)
-    antworten = db.relationship('Antwort', backref='frage', lazy=True)
+    question = db.Column(db.String(500), nullable=False)
+    option1 = db.Column(db.String(200), nullable=False)
+    option2 = db.Column(db.String(200), nullable=False)
+    option3 = db.Column(db.String(200), nullable=False)
+    answer = db.Column(db.String(200), nullable=False)
+    explanation = db.Column(db.String(500), nullable=True) 
+    difficulty = db.Column(db.String(50), nullable=False)
 
-class Antwort(db.Model):
+    def serialize(self):
+        return {
+            'question': self.question,
+            'option1': self.option1,
+            'option2': self.option2,
+            'option3': self.option3,
+            'answer': self.answer,
+            'explanation': self.explanation
+        }
+
+class UserScore(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    text = db.Column(db.String(100), nullable=False)
-    ist_richtig = db.Column(db.Boolean, default=False)
-    frage_id = db.Column(db.Integer, db.ForeignKey('frage.id'), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    score = db.Column(db.Integer, nullable=False)
+    quiz_date = db.Column(db.DateTime, default=datetime.utcnow)
 
-def erstelle_quiz():
-    fragen = Frage.query.all()
-    zufällige_fragen = random.sample(fragen, 5)
-    return zufällige_fragen
+@app.before_request
+def before_request():
+    g.user = None
+    if 'user_id' in session:
+        user = User.query.filter_by(id=session['user_id']).first()
+        g.user = user
+
+
+
+class QuestionForm(FlaskForm):
+    options = RadioField('Options: ', validators=[DataRequired()], choices=[('option1', ''), ('option2', ''), ('option3', '')])
+    submit = SubmitField('Next')
+
+
+class RegistrationForm(FlaskForm):
+    benutzername = StringField('Benutzername', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    passwort = PasswordField('Passwort', validators=[DataRequired()])
+    passwort2 = PasswordField('Passwort bestätigen', validators=[DataRequired(), EqualTo('passwort')])
+    submit = SubmitField('Register')
+
+    def validate_benutzername(self, benutzername):
+        user = User.query.filter_by(benutzername=benutzername.data).first()
+        if user is not None:
+            raise ValidationError('Benutzername existiert bereits.')
+    
+    def validate_email(self, email):
+        user = User.query.filter_by(email=email.data).first()
+        if user is not None:
+            raise ValidationError('E-Mail existiert bereits.')
+
+class LoginForm(FlaskForm):
+    benutzername = StringField('Benutzername', validators=[DataRequired()])
+    passwort = PasswordField('Passwort', validators=[DataRequired()])
+    remember_me = BooleanField('Remember Me')
+    submit = SubmitField('Login')
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def home():
+    return render_template('index.html', title='Home')
 
-@app.route('/registrieren', methods=['GET', 'POST'])
-def registrieren():
-    if request.method == 'POST':
-        benutzername = request.form.get('benutzername')
-        email = request.form.get('email')
-        passwort = request.form.get('passwort')
-
-        vorhandener_benutzer = Benutzer.query.filter_by(email=email).first()
-        if vorhandener_benutzer:
-            flash('Diese E-Mail ist bereits registriert. Bitte melden Sie sich an oder verwenden Sie eine andere E-Mail.', 'error')
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(benutzername=form.benutzername.data).first()
+        if user and user.check_password(form.passwort.data):
+            session['user_id'] = user.id
+            return redirect(url_for('home'))
         else:
-            passwort_hash = bcrypt.generate_password_hash(passwort).decode('utf-8')
-            neuer_benutzer = Benutzer(benutzername=benutzername, email=email, passwort=passwort_hash)
-            db.session.add(neuer_benutzer)
+            flash('Ungültiger Benutzername oder Passwort')
+    return render_template('login.html', title='Login', form=form)
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegistrationForm()
+
+    print("=== Register-Funktion wird aufgerufen ===")
+
+    if form.validate_on_submit():
+        print("Formular wurde erfolgreich validiert.")
+
+        user = User(benutzername=form.benutzername.data, email=form.email.data)
+        user.set_password(form.passwort.data)
+
+        try:
+            db.session.add(user)
             db.session.commit()
-            flash('Ihr Konto wurde erstellt. Sie können sich jetzt anmelden.', 'success')
+            print("User wurde erfolgreich zur Datenbank hinzugefügt.")
+        except Exception as e:
+            print(f"Fehler beim Hinzufügen des Benutzers zur Datenbank: {e}")
 
-            # Füge hier die Zeile für die Umleitung hinzu
-            return redirect(url_for('index'))
+        session['user_id'] = user.id
 
-    return render_template('registrieren.html')
+        return redirect(url_for('home'))
+
+    else:
+        print("Formularvalidierung fehlgeschlagen.")
+        for field, errors in form.errors.items():
+            for error in errors:
+                print(f"Fehler im Feld '{getattr(form, field).label.text}': {error}")
+
+    return render_template('register.html', title='Register', form=form)
 
 
 
-
-
-    print("Nicht im POST")
-    return render_template('registrieren.html')
-
-
-
-@app.route('/anmelden', methods=['GET', 'POST'])
-def anmelden():
+@app.route('/select_difficulty', methods=['GET', 'POST'])
+def select_difficulty():
     if request.method == 'POST':
-        email = request.form.get('email')
-        passwort = request.form.get('passwort')
+        difficulty = request.form['difficulty']
+        session['selected_difficulty'] = difficulty
+        return redirect(url_for('quiz', difficulty=difficulty))
 
-        benutzer = Benutzer.query.filter_by(email=email).first()
-        if benutzer:
-            if bcrypt.check_password_hash(benutzer.passwort, passwort):
-                login_user(benutzer)
-                next_page = request.args.get('next')
-                return redirect(next_page or url_for('profil'))
+    return render_template('select_difficulty.html')
 
-        flash('Anmeldung fehlgeschlagen. Bitte überprüfen Sie Ihre Eingaben.', 'error')
+def get_questions(difficulty):
+    questions = QuizQuestion.query.filter_by(difficulty=difficulty).all()
+    return questions
 
-    return render_template('anmelden.html')
-# ...
-
-@app.route('/profil')
-@login_required
-def profil():
-    return render_template('profil.html', benutzer=current_user)
-
-@app.route('/abmelden')
-@login_required
-def abmelden():
-    logout_user()
-    return redirect(url_for('index'))
-
-@app.route('/quiz')
-@login_required
+@app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
-    fragen = erstelle_quiz()
-    return render_template('quiz.html', fragen=fragen)
+    return render_template('quiz.html', title='Quiz')
 
-@app.route('/quiz/antworten', methods=['POST'])
-@login_required
-def antworten():
-    benutzer_antworten = request.form.to_dict()
-    score = 0
 
-    for frage_id, antwort_id in benutzer_antworten.items():
-        antwort = Antwort.query.get(int(antwort_id))
-        if antwort and antwort.ist_richtig:
-            score += 1
+@app.route('/quiz-questions')
+def quiz_questions():
+    print("=== Quiz Route aufgerufen ===")  # Hinzugefügte Lokalausgabe
+    difficulty = session.get('selected_difficulty')
+    print(f"Selected Difficulty: {difficulty}")  # Hinzugefügte Lokalausgabe
 
-    flash(f'Ihr Score: {score}', 'info')
-    return redirect(url_for('quiz'))
+    # Check if the difficulty is not selected, redirect to select difficulty
+    if not difficulty:
+        flash('Bitte wählen Sie zuerst die Schwierigkeitsstufe aus.')
+        return redirect(url_for('select_difficulty'))
 
-if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
-<<<<<<< HEAD
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Get the questions for the selected difficulty
+    questions = get_questions(difficulty)
+    formatted_questions = []
+    for idx, question in enumerate(questions, start=1):
+        formatted_question = {
+            'numb': idx,
+            'question': question.question,
+            'answer': question.answer,
+            'options': [
+                question.option1,
+                question.option2,
+                question.option3,
+            ],
+            'explanation':question.explanation
+        }
+        formatted_questions.append(formatted_question)
+    print(formatted_questions)
+    print(f"Number of Questions: {len(formatted_questions)}")
+    return jsonify(formatted_questions)
 
-=======
+@app.route('/update_marks', methods=['POST'])
+def update_marks():
+    data = request.json
+    
+    if 'score' not in data:
+        return jsonify({'error': 'score not provided'}), 400
+    score = data.get('score')
+    
+    # Get the user from the database
+    user_id = session.get('user_id',None)
+    user = User.query.get(user_id)
+    print(user)
+    # Check if the user exists
+    if user is None:
+        return jsonify({'error': 'User not found'}), 404
+
+    previous_marks = None
+    
+    if user.marks == None:
+        previous_marks = 0
+    else:
+        previous_marks = user.marks
+    # Update user marks
+    user.marks = previous_marks + score
+
+    # Commit the changes to the database
+    db.session.commit()
+
+    return jsonify({'message': 'User marks updated successfully'})
+
+
+# @app.route('/quiz/result')
+# def quiz_result():
+#     user_score = UserScore.query.filter_by(user_id=g.user.id).first()
+#     return render_template('quiz_result.html', score=user_score.score if user_score else 0)
+
+
+@app.route('/quiz/high-score')
+def quiz_high_score_result():
+    # Query users with non-null marks in descending order
+    users_with_marks = User.query.filter(User.marks.isnot(None)).order_by(desc(User.marks)).all()
+    return render_template('high-score-results.html', users_with_marks=users_with_marks)
+
+
+@app.route('/resetQuiz', methods=['GET'])
+def reset_quiz():
+    session.pop('selected_difficulty', None)
+    return redirect(url_for('home'))
+
+
+@app.route('/profile')
+def profile():
+    if not g.user:
+        flash("Sie müssen angemeldet sein, um auf Ihr Profil zuzugreifen.")
+        return redirect(url_for('login'))
+    return render_template('profile.html', title='Profil', user=g.user)
+
+@app.route('/logout')
+def logout():
+    if not g.user:
+        return redirect(url_for('login'))
+    session.pop('user_id', None)
+    return redirect(url_for('home'))
+
+if __name__ == "__main__":
+    # with app.app_context():
+    #     db.create_all()
     app.run(debug=True, host='127.0.0.1', port=5000)
->>>>>>> 441617b9d0998ddd3c15b1ccc3762a9ee7631e8d
