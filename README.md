@@ -38,14 +38,8 @@ $ source venv/bin/activate
 # Erforderliche Pakete installieren
 $ pip install -r requirements.txt
 
-# Flask-App setzen und starten
-# Windows
-$ set FLASK_APP=__init__.py
-$ flask run
-
-# Linux/Mac
-$ export FLASK_APP=__init__.py
-$ flask run
+# Quiz-Anwendung starten 
+$ python app.py
 ```
 
 ## Funktionen
