@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session, g, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
 from werkzeug.urls import url_parse
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_wtf import FlaskForm
@@ -10,7 +9,6 @@ from sqlalchemy import desc
 from datetime import datetime
 from sqlalchemy import or_
 import os
-import logging
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
