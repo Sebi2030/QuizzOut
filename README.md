@@ -11,6 +11,7 @@ QuizzOut ist eine unterhaltsame Flask-Anwendung für Quizspiele. Die Anwendung b
 - [Installation](#installation)
 - [Funktionen](#funktionen)
 - [Verwendete Technologien](#verwendete-technologien)
+- [Lizenz](#lizenz)
 
 ### Voraussetzungen
 
@@ -67,3 +68,6 @@ Schau dir die Top-Spieler auf der Bestenliste an und vergleiche deine Ergebnisse
 - **Jinja2:** Ein leistungsfähiges und benutzerfreundliches Template-Engine für Python.
 - **SQLite:** Ein eingebettetes relationales Datenbankmanagementsystem.
 - **HTML/CSS/JavaScript:** Standard-Webtechnologien für die Gestaltung und Interaktion von Benutzeroberflächen.
+
+## Lizenz
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen findest du in der [LICENSE](./LICENSE)-Datei.
