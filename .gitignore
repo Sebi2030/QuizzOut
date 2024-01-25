@@ -1,3 +1,6 @@
+# IDE files
+.vscode/
+
 # Ignore __pycache__ folder (precompiled Python code)
 __pycache__/
 
@@ -6,4 +9,3 @@ venv/
 
 # Ignore instance folder (used by Flask web app, e.g., for SQLite database)
 instance/
-
