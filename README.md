@@ -28,18 +28,18 @@ $ cd QuizzOut
 
 # Virtuelle Umgebung erstellen und aktivieren
 # Windows
-$ python -m venv venv
+$ python -m venv venv / python3 -m venv venv
 $ .\venv\Scripts\activate
 
 # Linux/Mac
-$ python -m venv venv
+$ python -m venv venv / python3 -m venv venv
 $ source venv/bin/activate
 
 # Erforderliche Pakete installieren
 $ pip install -r requirements.txt
 
 # Quiz-Anwendung starten 
-$ python app.py
+$ python app.py / python3 app.py
 ```
 
 ## Funktionen
