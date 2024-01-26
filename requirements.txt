@@ -6,6 +6,7 @@ charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
 docopt==0.6.2
+email-validator
 Flask==2.3.3
 Flask-Bcrypt==1.0.1
 Flask-Login==0.6.3
