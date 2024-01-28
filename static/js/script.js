@@ -184,7 +184,7 @@ function showResult() {
     // Wenn der Benutzer mehr als 3 Punkte erzielt hat
     // Erstellen eines neuen span-Tags und Übergeben der Benotung und der Gesamtanzahl der Fragen
     let scoreTag =
-      "<span>und Glückwunsch! 🎉, Sie haben <p>" +
+      "<span>Glückwunsch! 🎉, Sie haben <p>" +
       userScore +
       "</p> von <p>" +
       questions.length +
@@ -193,7 +193,7 @@ function showResult() {
   } else if (userScore > 1) {
     // Wenn der Benutzer mehr als 1 Punkt erzielt hat
     let scoreTag =
-      "<span>und nett 😎, Sie haben <p>" +
+      "<span>nett 😎, Sie haben <p>" +
       userScore +
       "</p> von <p>" +
       questions.length +
@@ -202,7 +202,7 @@ function showResult() {
   } else {
     // Wenn der Benutzer weniger als 1 Punkt erzielt hat
     let scoreTag =
-      "<span>und sorry 😐, Sie haben nur <p>" +
+      "<span>sorry 😐, Sie haben nur <p>" +
       userScore +
       "</p> von <p>" +
       questions.length +
