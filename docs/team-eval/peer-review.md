@@ -23,7 +23,7 @@ nav_order: 3
 
 [A specific observation, regarding know-how, effectiveness, team work or from another relevant area]
 
-### Effect on me (Wirkung)
+### Effect on me
 
 [What positive or negative effect did this observation have on the reviewer?]
 
