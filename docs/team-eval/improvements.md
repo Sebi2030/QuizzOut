@@ -5,7 +5,7 @@ nav_order: 2
 ---
 
 ---
-{: .label }
+{: .label .lebel.blue }
 Abinesh Gulasingam 
 
 {: .label .label-green }
