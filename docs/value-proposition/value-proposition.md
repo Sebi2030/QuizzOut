@@ -4,7 +4,8 @@ nav_order: 1
 ---
 
 {: .label }
-Abinesh Gulasingam
+Abinesh Gulasingam 
+Sebastian Lukas Nieme
 
 # Value proposition
 
