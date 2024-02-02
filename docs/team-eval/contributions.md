@@ -6,7 +6,7 @@ nav_order: 4
 
 
 
-# [Summary of individual contributions]
+# Summary of individual contributions
 {: .no_toc }
 
 <details open markdown="block">
@@ -16,16 +16,20 @@ nav_order: 4
 {: toc }
 </details>
 
-## [Jane Dane]
+## Abinesh Gulasingam
 
-Contributions
-: Jane's first contribution
-: Jane's second contribution
+Contributions  
+
+ First contribution : Selecting and discussing the topic. 
+
+Second contribution : Making design decisions like which
 : ...
 
-## [Joe Doe]
+## Sebastian Lukas Nieme
 
 Contributions
-: Joe's first contribution
-: Joe's second contribution
+
+First contribution : Selecting and discussing the topic  
+
+Second contribution : Setting up GitHub Pages.
 : ...
