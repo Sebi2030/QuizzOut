@@ -7,11 +7,9 @@ nav_order: 2
 ---
 
 {: .label }
-
 Abinesh Gulasingam 
 
 {: .label .label-green }
-
 Sebastian Lukas Nieme
 # How we would improve next time
 
