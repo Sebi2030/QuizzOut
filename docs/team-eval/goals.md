@@ -9,11 +9,6 @@ nav_order: 1
 {: .label .label-green } Sebastian Lukas Nieme
 
 # [Goals achieved and missed]
-| Name       | Alter | Stadt    |
-|------------|-------|----------|
-| Max Mustermann | 30    | Berlin   |
-| Lisa Schmidt   | 25    | München  |
-| Peter Meier    | 35    | Hamburg  |
 
 {: .no_toc }
 
