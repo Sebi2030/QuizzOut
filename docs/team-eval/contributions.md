@@ -37,7 +37,7 @@ Es muss beachtet werden, dass wir dem Anderen immer geholfen haben, wenn Schwier
 
 ## Sebastian Lukas Nieme
 
-Contributions
+**Contributions**
 
 **First contribution** : Entwicklung einer Idee zusammen mit dem Teampartner und Überlegung welchen Mehrwert unsere Idee den Menschen bietet.Anschließend wurde mit dem Professor erörtert, ob unsere Idee solide ist und ob die Idee zulässig ist. (02.11.2023).
 
