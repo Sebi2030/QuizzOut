@@ -4,10 +4,11 @@ parent: Team Evaluation
 nav_order: 1
 ---
 
-{: .label } Abinesh Gulasingam
+{: .label }
+Abinesh Gulasingam 
 
-{: .label .label-green } Sebastian Lukas Nieme
-
+{: .label .label-green }
+Sebastian Lukas Nieme
 # [Goals achieved and missed]
 
 {: .no_toc }
