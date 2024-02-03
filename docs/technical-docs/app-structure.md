@@ -6,6 +6,8 @@ nav_order: 1
 
 {: .label }
 [Jane Dane]
+{: .label }
+[Jane Dane]
 
 # App Structure
 {: .no_toc }
@@ -57,7 +59,6 @@ Abinesh Gulasingam
 
 
 
-### Effect on me
 
 
 
