@@ -25,7 +25,12 @@ Abinesh Gulasingam
 
 Manchmal stellte sich die Aufgabenverteilung als knifflig heraus, und es bedurfte eines gewissen Vertrauens, dass am Ende alles nahtlos zusammengeführt werden konnte. Insbesondere machte ich mir ständig Gedanken darüber, ob die Datenbank reibungslos mit unserer Benutzeroberfläche interagieren würde. Es gab Momente, in denen es schwierig war, meinem Partner bedingungslos zu vertrauen, wie im zuvor genannten Beispiel. Ich hegte natürlich auch Zweifel, ob meine Verantwortungsbereiche effektiv mit denen meines Partners zusammenarbeiten würden, um letztendlich ein funktionsfähiges Produkt zu entwickeln. Besonders geschätzt habe ich die offene Kommunikation und die Bereitschaft, einander zu unterstützen. Die Nutzung von GitHub erwies sich als äußerst hilfreich für unsere Zusammenarbeit und das Projekt insgesamt. Dadurch konnten wir auch ohne direkte Kommunikation den Fortschritt des Partners verfolgen.
 
+### Requirements
 
+
+### Choose Mode
+
+### Start Game
 
 
 
