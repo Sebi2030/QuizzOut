@@ -17,7 +17,7 @@ nav_order: 3
 {: toc }
 </details>
 
-## [team member] - review 1
+## Abinesh Gulasingam - review 1
 
 ### My observation (Wahrnehmung)
 
@@ -29,7 +29,7 @@ nav_order: 3
 
 ### Tip for the future (Wunsch)
 
-## [team member] - review 2
+## Sebastian Lukas Nieme - review 2
 
 ### My observation (Wahrnehmung)
 
