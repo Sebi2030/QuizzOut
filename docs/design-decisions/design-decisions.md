@@ -116,6 +116,8 @@ Besonders beeindruckend finden wir Jinjas Geschwindigkeit und Effizienz bei der 
 2. Schnell und effizient in der Verarbeitung von Templates
 3. Unterstützt dynamische Inhalte in HTML-Dateien mit Variablen, Bedingungen und Schleifen
 4. Ist uns bereits vertraut
+
+   
 **Contra:**
 1. Weniger integrierte Funktionen im Vergleich zur Django-Template-Engine
 2. Benötigt möglicherweise mehr manuelle Konfiguration und Anpassung
