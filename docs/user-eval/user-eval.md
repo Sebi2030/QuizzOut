@@ -26,92 +26,34 @@ Sebastian Lukas Nieme
 ### Meta
 
 Status
-: **Work in progress** - Done - Obsolete
+: Work in progress - **Done** - Obsolete
 
 Updated
 : DD-MMM-YYYY
 
-### Goal 1: Untersuchung der Benutzerfreundlichkeit beim Absolvieren von Quizfragen
+## Goal 1: Untersuchung der Benutzerfreundlichkeit beim Absolvieren von Quizfragen
 
-#### Methoden:
-- **Benutzertests:** Bitten Sie eine Gruppe von Probanden, die Quiz-App zu verwenden, während sie beobachtet werden. Sammeln Sie Feedback zu Benutzerfreundlichkeit, Benutzeroberfläche, Navigation und Gesamtbenutzererfahrung.
-- **Umfragen:** Senden Sie Umfragen an aktive Benutzer der Quiz-App und bitten Sie sie, ihre Erfahrungen und Meinungen zu verschiedenen Aspekten der App zu teilen, einschließlich der Benutzerfreundlichkeit.
+### Methoden:
+ **Benutzertests:** Wir haben unsere Applikationen unter Kommilitonen weitergereicht umzuschauen, wie sie ankommt. Sie sollten das Spiel spielen und sie sollten uns ihre ehrliche Meinung sagen.
+ **Vergleich mit anderen Quizanwendungen:** Selbstverständlich ist es auch wichtig sich mit sogenannten Konkurrenten zu vergleichen. Deshalb haben wir auch andere Quizapplikationen gespielt um uns inspirieren zulassen.
 
-#### Ergebnisse:
-- Durchschnittliche Zeit, die Benutzer benötigen, um ein Quiz abzuschließen.
-- Häufigkeit und Art der Fehler, die Benutzer während des Quizdurchlaufs machen.
-- Feedback von Benutzern zu spezifischen Funktionen oder Aspekten der Benutzererfahrung.
+### Ergebnisse:
+Es hat sich herausgestellt, dass die meisten die Logik und den Mechanismus an sich als in Ordung empfanden, aber die Benutzeoberfläche etwas benutzerunfreundlich war. Wir haben auch empfunden, dass man an der Benutzeroberfläche etwas verändern musste.
 
-#### Implikationen:
-- Basiert auf dem Feedback der Benutzer können Änderungen an der Benutzeroberfläche vorgenommen werden, um die Navigation zu verbessern und die Benutzerfreundlichkeit zu erhöhen.
-- Möglicherweise müssen Erklärungen oder Anleitungen hinzugefügt werden, um Verwirrung bei bestimmten Quizfragen zu reduzieren.
+### Implikationen:
+Basierend auf diesem Feedback, haben wir uns nochmal an die Benutzeroberfläche gesetzt und versucht sie etwas benutzerfreundlicher zugestalten.
 
-## Bewertung der Quizfragen und Schwierigkeitsgrade
+##  02:Bewertung der Quizfragen und Schwierigkeitsgrade
 
 
 ### Goal 2: Bewertung der Quizfragen und Schwierigkeitsgrade
 
 #### Methoden:
-- **Analyse von Quizergebnissen:** Untersuchen Sie die Leistung der Benutzer in verschiedenen Quizkategorien und Schwierigkeitsgraden, um Muster und Trends zu identifizieren.
-- **Expertenbewertung:** Bitten Sie Fachleute im Bereich Bildung oder Quizdesign, die Quizfragen zu bewerten und Feedback zu ihrer Angemessenheit und Schwierigkeit zu geben.
+- **Benutzertests:** Wir haben unsere Applikationen unter Kommilitonen weitergereicht umzuschauen, wie sie ankommt. Sie sollten das Spiel spielen und sie sollten uns ihre ehrliche Meinung sagen.
+
 
 #### Ergebnisse:
-- Erfolgsquote der Benutzer in verschiedenen Quizkategorien und Schwierigkeitsgraden.
-- Feedback von Experten zu den Quizfragen, einschließlich ihrer Genauigkeit, Klarheit und Relevanz.
+Einige empfanden, dass die fragen in den verschiedenen Kategorien manchmal nicht entsprechend leicht oder schwierig waren.
 
 #### Implikationen:
-- Aufgrund der Analyse der Quizergebnisse können Anpassungen an den Schwierigkeitsgraden der Fragen vorgenommen werden, um sicherzustellen, dass sie herausfordernd, aber nicht überwältigend sind.
-- Basierend auf dem Feedback der Experten können ungenaue oder unklare Quizfragen überarbeitet oder entfernt werden, um die Qualität des Quizinhalts zu verbessern.
-
-# User evaluation
-{: .no_toc }
-
-<details open markdown="block">
-{: .text-delta }
-<summary>Table of contents</summary>
-+ ToC
-{: toc }
-</details>
-
-## 01:Untersuchung der Benutzerfreundlichkeit beim Absolvieren von Quizfragen
-
-
-### Meta
-
-Status
-: **Work in progress** - Done - Obsolete
-
-Updated
-: DD-MMM-YYYY
-
-### Goal 1: Untersuchung der Benutzerfreundlichkeit beim Absolvieren von Quizfragen
-
-#### Methoden:
-- **Benutzertests:** Bitten Sie eine Gruppe von Probanden, die Quiz-App zu verwenden, während sie beobachtet werden. Sammeln Sie Feedback zu Benutzerfreundlichkeit, Benutzeroberfläche, Navigation und Gesamtbenutzererfahrung.
-- **Umfragen:** Senden Sie Umfragen an aktive Benutzer der Quiz-App und bitten Sie sie, ihre Erfahrungen und Meinungen zu verschiedenen Aspekten der App zu teilen, einschließlich der Benutzerfreundlichkeit.
-
-#### Ergebnisse:
-- Durchschnittliche Zeit, die Benutzer benötigen, um ein Quiz abzuschließen.
-- Häufigkeit und Art der Fehler, die Benutzer während des Quizdurchlaufs machen.
-- Feedback von Benutzern zu spezifischen Funktionen oder Aspekten der Benutzererfahrung.
-
-#### Implikationen:
-- Basiert auf dem Feedback der Benutzer können Änderungen an der Benutzeroberfläche vorgenommen werden, um die Navigation zu verbessern und die Benutzerfreundlichkeit zu erhöhen.
-- Möglicherweise müssen Erklärungen oder Anleitungen hinzugefügt werden, um Verwirrung bei bestimmten Quizfragen zu reduzieren.
-
-## Bewertung der Quizfragen und Schwierigkeitsgrade
-
-
-### Goal 2: Bewertung der Quizfragen und Schwierigkeitsgrade
-
-#### Methoden:
-- **Analyse von Quizergebnissen:** Untersuchen Sie die Leistung der Benutzer in verschiedenen Quizkategorien und Schwierigkeitsgraden, um Muster und Trends zu identifizieren.
-- **Expertenbewertung:** Bitten Sie Fachleute im Bereich Bildung oder Quizdesign, die Quizfragen zu bewerten und Feedback zu ihrer Angemessenheit und Schwierigkeit zu geben.
-
-#### Ergebnisse:
-- Erfolgsquote der Benutzer in verschiedenen Quizkategorien und Schwierigkeitsgraden.
-- Feedback von Experten zu den Quizfragen, einschließlich ihrer Genauigkeit, Klarheit und Relevanz.
-
-#### Implikationen:
-- Aufgrund der Analyse der Quizergebnisse können Anpassungen an den Schwierigkeitsgraden der Fragen vorgenommen werden, um sicherzustellen, dass sie herausfordernd, aber nicht überwältigend sind.
-- Basierend auf dem Feedback der Experten können ungenaue oder unklare Quizfragen überarbeitet oder entfernt werden, um die Qualität des Quizinhalts zu verbessern.
+Aufgrund dieser Analyse haben wir die Gewichtung der Fragen nochmal näher betrachtet und festgestellt, dass die Gewichtung der Fragen tatsächlich manchmal nicht dem eigentlichen Schwierigkeitsgrad entsprechend war. Deswegen hben wir die Gewichtung nochmal geändert, sodass sie Fragen wirklich dem jeweiligen Schwierigkeitsgrad entsprachen.
