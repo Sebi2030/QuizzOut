@@ -6,7 +6,6 @@ nav_order: 4
 
 {: .label }
 Abinesh Gulasingam
-
 {: .label. label-green }
 Sebastian Lukas Nieme
 
