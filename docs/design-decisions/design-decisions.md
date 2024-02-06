@@ -176,6 +176,7 @@ Datenbanklösung bietet, die perfekt für unser eher kleines Projekt geeignet is
 
 
 **Contra:**
+
 1.Da SQLite eine eingebettete Datenbank ist, bietet sie keine nativen Netzwerkfunktionen und erfordert zusätzlichen Aufwand, um den Zugriff über das Netzwerk zu ermöglichen.
 2. Die Leistung nimmt mit zunehmender Größe der Datenbank ab
 
