@@ -4,9 +4,12 @@ nav_order: 4
 ---
 
 {: .label }
-[Jane Dane]
+Abinesh Gulasingam
 
-# [User evaluation]
+{: .label. label-green }
+Sebastian Lukas Nieme
+
+# User evaluation
 {: .no_toc }
 
 <details open markdown="block">
@@ -16,7 +19,8 @@ nav_order: 4
 {: toc }
 </details>
 
-## 01: [Title]
+## 01:Untersuchung der Benutzerfreundlichkeit beim Absolvieren von Quizfragen
+
 
 ### Meta
 
@@ -26,20 +30,34 @@ Status
 Updated
 : DD-MMM-YYYY
 
-### Goal
+### Goal 1: Untersuchung der Benutzerfreundlichkeit beim Absolvieren von Quizfragen
 
-[Describe the goal of this evaluation, for example as a research question like: "How long does it take to register a new account and what is the drop-out rate?"]
+#### Methoden:
+- **Benutzertests:** Bitten Sie eine Gruppe von Probanden, die Quiz-App zu verwenden, während sie beobachtet werden. Sammeln Sie Feedback zu Benutzerfreundlichkeit, Benutzeroberfläche, Navigation und Gesamtbenutzererfahrung.
+- **Umfragen:** Senden Sie Umfragen an aktive Benutzer der Quiz-App und bitten Sie sie, ihre Erfahrungen und Meinungen zu verschiedenen Aspekten der App zu teilen, einschließlich der Benutzerfreundlichkeit.
 
-### Method
+#### Ergebnisse:
+- Durchschnittliche Zeit, die Benutzer benötigen, um ein Quiz abzuschließen.
+- Häufigkeit und Art der Fehler, die Benutzer während des Quizdurchlaufs machen.
+- Feedback von Benutzern zu spezifischen Funktionen oder Aspekten der Benutzererfahrung.
 
-[Describe how you proceed to achieve your evaluation goal. Be as specific as possible: others should be able to replicate your evaluation by following the description on this section.]
+#### Implikationen:
+- Basiert auf dem Feedback der Benutzer können Änderungen an der Benutzeroberfläche vorgenommen werden, um die Navigation zu verbessern und die Benutzerfreundlichkeit zu erhöhen.
+- Möglicherweise müssen Erklärungen oder Anleitungen hinzugefügt werden, um Verwirrung bei bestimmten Quizfragen zu reduzieren.
 
-### Results
+## Bewertung der Quizfragen und Schwierigkeitsgrade
 
-[Present the main results of your evaluation, for example: "On average, users need 3 min to register. The drop-out rate was 70%. Users that didn't complete provided the following reasons: ..."]
 
-### Implications
+### Goal 2: Bewertung der Quizfragen und Schwierigkeitsgrade
 
-[What did you learn from this evaluation and what will you change to improve? Example: "We aim to decrease the drop-out rate by not asking for a birth date. We will re-run this evaluation to measure the impact."]
+#### Methoden:
+- **Analyse von Quizergebnissen:** Untersuchen Sie die Leistung der Benutzer in verschiedenen Quizkategorien und Schwierigkeitsgraden, um Muster und Trends zu identifizieren.
+- **Expertenbewertung:** Bitten Sie Fachleute im Bereich Bildung oder Quizdesign, die Quizfragen zu bewerten und Feedback zu ihrer Angemessenheit und Schwierigkeit zu geben.
 
----
+#### Ergebnisse:
+- Erfolgsquote der Benutzer in verschiedenen Quizkategorien und Schwierigkeitsgraden.
+- Feedback von Experten zu den Quizfragen, einschließlich ihrer Genauigkeit, Klarheit und Relevanz.
+
+#### Implikationen:
+- Aufgrund der Analyse der Quizergebnisse können Anpassungen an den Schwierigkeitsgraden der Fragen vorgenommen werden, um sicherzustellen, dass sie herausfordernd, aber nicht überwältigend sind.
+- Basierend auf dem Feedback der Experten können ungenaue oder unklare Quizfragen überarbeitet oder entfernt werden, um die Qualität des Quizinhalts zu verbessern.
