@@ -9,8 +9,9 @@ Abinesh Gulasingam
 # App behavior
 {: .no_toc }
 
-![Anwendungsfalldiagramm](https://github.com/Sebi2030/QuizzOut/blob/main/docs/assets/images/Anwendungsfalldiagramm.png)
-
+```markdown
+![get_list_todos_sample](assets/images/fswd-intro_02.png)
+```
 <details open markdown="block">
 {: .text-delta }
 <summary>Table of contents</summary>
