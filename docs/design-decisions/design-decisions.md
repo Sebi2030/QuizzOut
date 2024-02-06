@@ -4,7 +4,8 @@ nav_order: 3
 ---
 
 {: .label }
-Abinesh Gulasingam
+Abinesh Gulasingam 
+
 {: .label .label-green }
 Sebastian Lukas Nieme
 
@@ -21,7 +22,8 @@ Sebastian Lukas Nieme
 ## 01: Entscheiden für das geeignete Werkzeug für die Datenbank: SQL oder SQLAlchemy ?
 
 {: .label }
-Abinesh Gulasingam
+Abinesh Gulasingam 
+
 {: .label .label-green }
 Sebastian Lukas Nieme
 
@@ -74,7 +76,8 @@ Wir haben uns für SQLAlchemy entschieden, weil es uns ermöglicht, unsere Daten
 ## 02: Entscheiden für das geeignete Web-Framework:Jinja oder Django ?
 
 {: .label }
-Abinesh Gulasingam
+Abinesh Gulasingam 
+
 {: .label .label-green }
 Sebastian Lukas Nieme
 
@@ -137,7 +140,8 @@ Besonders beeindruckend finden wir Jinjas Geschwindigkeit und Effizienz bei der 
 ## 03: Welches Datenbanksystem wollen wir nutzen? Erwägung zwischen SQLite und MySQL.
 
 {: .label }
-Abinesh Gulasingam
+Abinesh Gulasingam 
+
 {: .label .label-green }
 Sebastian Lukas Nieme
 
