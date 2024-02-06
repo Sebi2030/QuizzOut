@@ -7,7 +7,7 @@ nav_order: 5
 {: .label }
 Abinesh Gulasingam
 
-{: .label. label-green }
+{: .label .label-green }
 Sebastian Lukas Nieme
 
 # Team evaluation
