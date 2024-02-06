@@ -9,7 +9,7 @@ Abinesh Gulasingam
 # App behavior
 {: .no_toc }
 
-![get_list_todos_sample](assets/images/Anwendungsfalldiagramm.png)
+![get_list_todos_sample](docs/technical-docs/Anwendungsfalldiagramm.png)
 <details open markdown="block">
 {: .text-delta }
 <summary>Table of contents</summary>
