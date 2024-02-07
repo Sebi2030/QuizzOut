@@ -4,18 +4,15 @@ parent: Technical Docs
 nav_order: 4
 ---
 
-{: .label }
-[Sebastian Lukas Nieme]
+{: .label}
+Abinesh Gulasingam
 
-# [Reference documentation]
+{: .label. label-green }
+Sebastian Lukas Nieme
+
+# Reference documentation
 {: .no_toc }
 
-{: .attention }
-> This page collects internal functions, routes with their functions, and APIs (if any).
-> 
-> See [Uber](https://developer.uber.com/docs/drivers/references/api) or [PayPal](https://developer.paypal.com/api/rest/) for exemplary high-quality API reference documentation.
->
-> You may delete this `attention` box.
 
 <details open markdown="block">
 {: .text-delta }
@@ -24,7 +21,7 @@ nav_order: 4
 {: toc }
 </details>
 
-## [home()]
+## home()
 
 **Route:** `/`
 
@@ -34,7 +31,7 @@ nav_order: 4
 
 ---
 
-## [login()]
+## login()
 
 **Route:** `/login`
 
@@ -44,7 +41,7 @@ nav_order: 4
 
 ---
 
-## [register()]
+## register()
 
 **Route:** `/register`
 
@@ -64,7 +61,7 @@ nav_order: 4
 
 ---
 
-## [quiz()]
+## quiz()
 
 **Route:** `/quiz`
 
@@ -74,7 +71,7 @@ nav_order: 4
 
 ---
 
-## [quiz_questions()]
+## quiz_questions()
 
 **Route:** `/quiz-questions`
 
@@ -94,7 +91,7 @@ nav_order: 4
 
 ---
 
-## [quiz_high_score_result()]
+## quiz_high_score_result() 
 
 **Route:** `/quiz/high-score`
 
@@ -104,7 +101,7 @@ nav_order: 4
 
 ---
 
-## [reset_quiz()]
+## reset_quiz()
 
 **Route:** `/resetQuiz`
 
@@ -124,7 +121,7 @@ nav_order: 4
 
 ---
 
-## [logout()]
+## logout()
 
 **Route:** `/logout`
 
