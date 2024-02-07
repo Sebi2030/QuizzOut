@@ -10,7 +10,7 @@ Abinesh Gulasingam
 {: .label .label-green }
 Sebastian Lukas Nieme
 
-# [Peer review]
+# Peer review
 {: .no_toc }
 
 <details open markdown="block">
