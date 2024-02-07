@@ -51,7 +51,7 @@ Sebastian Lukas Nieme
 
 ---
 
-## [select_difficulty()]
+## select_difficulty()
 
 **Route:** `/select_difficulty`
 
@@ -81,7 +81,7 @@ Sebastian Lukas Nieme
 
 ---
 
-## [update_marks()]
+## update_marks()
 
 **Route:** `/update_marks`
 
@@ -111,7 +111,7 @@ Sebastian Lukas Nieme
 
 ---
 
-## [profile()]
+## profile()
 
 **Route:** `/profile`
 
