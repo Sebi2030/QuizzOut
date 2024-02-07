@@ -5,7 +5,7 @@ nav_order: 4
 ---
 
 {: .label }
-[Jane Dane]
+[Sebastian Lukas Nieme]
 
 # [Reference documentation]
 {: .no_toc }
@@ -24,62 +24,111 @@ nav_order: 4
 {: toc }
 </details>
 
-## [Section / module]
+## [home()]
 
-### `function_definition()`
+**Route:** `/`
 
-**Route:** `/route/`
+**Methoden:** `GET`
 
-**Methods:** `POST` `GET` `PATCH` `PUT` `DELETE`
-
-**Purpose:** [Short explanation of what the function does and why]
-
-**Sample output:**
-
-[Show an image, string output, or similar illustration -- or write NONE if function generates no output]
+**Zweck:** Zeigt die Startseite der Anwendung an.
 
 ---
 
-## [Example, delete this section] Show to-do lists
+## [login()]
 
-### `get_lists()`
+**Route:** `/login`
 
-**Route:** `/lists/`
+**Methoden:** `GET`, `POST`
 
-**Methods:** `GET`
-
-**Purpose:** Show all to-do lists.
-
-**Sample output:**
-
-![get_lists() sample](../assets/images/fswd-intro_00.png)
+**Zweck:** Erlaubt Benutzern das Einloggen in die Anwendung.
 
 ---
 
-### `get_list_todos(list_id)`
+## [register()]
 
-**Route:** `/lists/<int:list_id>`
+**Route:** `/register`
 
-**Methods:** `GET`
+**Methoden:** `GET`, `POST`
 
-**Purpose:** Retrieve all to-do items of to-do list with ID `list_id` from database and present to user.
-
-**Sample output:**
-
-![get_list_todos() sample](../assets/images/fswd-intro_02.png)
+**Zweck:** Erlaubt Benutzern die Registrierung für einen neuen Account in der Anwendung.
 
 ---
 
-## [Example, delete this section] Insert sample data
+## [select_difficulty()]
 
-### `run_insert_sample()`
+**Route:** `/select_difficulty`
 
-**Route:** `/insert/sample`
+**Methoden:** `GET`, `POST`
 
-**Methods:** `GET`
+**Zweck:** Erlaubt Benutzern die Auswahl der Schwierigkeitsstufe für das Quiz.
 
-**Purpose:** Flush the database and insert sample data set
+---
 
-**Sample output:**
+## [quiz()]
 
-Browser shows: `Database flushed and populated with some sample data.`
+**Route:** `/quiz`
+
+**Methoden:** `GET`, `POST`
+
+**Zweck:** Zeigt das Quiz an.
+
+---
+
+## [quiz_questions()]
+
+**Route:** `/quiz-questions`
+
+**Methoden:** `GET`
+
+**Zweck:** Gibt die Fragen des Quiz zurück, basierend auf der ausgewählten Schwierigkeitsstufe.
+
+---
+
+## [update_marks()]
+
+**Route:** `/update_marks`
+
+**Methoden:** `POST`
+
+**Zweck:** Aktualisiert die Punktzahl des Benutzers nach Abschluss des Quiz.
+
+---
+
+## [quiz_high_score_result()]
+
+**Route:** `/quiz/high-score`
+
+**Methoden:** `GET`
+
+**Zweck:** Zeigt die Bestenliste der Benutzer mit den höchsten Punktzahlen an.
+
+---
+
+## [reset_quiz()]
+
+**Route:** `/resetQuiz`
+
+**Methoden:** `GET`
+
+**Zweck:** Setzt die Auswahl der Schwierigkeitsstufe für das Quiz zurück.
+
+---
+
+## [profile()]
+
+**Route:** `/profile`
+
+**Methoden:** `GET`
+
+**Zweck:** Zeigt das Benutzerprofil an.
+
+---
+
+## [logout()]
+
+**Route:** `/logout`
+
+**Methoden:** `GET`
+
+**Zweck:** Erlaubt Benutzern das Ausloggen aus der Anwendung.
+
