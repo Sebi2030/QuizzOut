@@ -24,3 +24,6 @@ Um den Herausforderungen von Studierenden zu begegnen, die oft wenig Zeit haben,
 Unsere Zielgruppe sind explizit Studierende im ersten Semester des Wirtschaftsinformatikstudiums. Aus eigener Erfahrung wissen wir, dass das mitgebrachte Wissen oft nicht ausreichend ist, um sich im Wirtschaftsinformatikstudium zurechtzufinden. Oftmals ist man zu nachlässig oder hat ein schlechtes Zeitmanagement. Gerade diesen Studierenden wollen wir mit unserer Applikation helfen. Jedoch können auch Studierende, die über etwas fortgeschrittenere Kenntnisse verfügen, die Applikation nutzen, aufgrund der drei Schwierigkeitsstufen.
 ## Customer journey
 Wir erhoffen uns, dass die Studierenden durch die Nutzung unserer Applikation ihr Wissen stetig verbessern und auch Gefallen an dem Studium finden. Ausserdem können durch das "Battlen mit anderen Studieren Kontakte entstehen mit den man gemeinsam durch das Studium geht.
+
+
+![2023-11-22-21-18-47_EDIT org](https://github.com/Sebi2030/QuizzOut/assets/149621097/735d43c4-8bda-439d-9787-6ef36b858d36)
