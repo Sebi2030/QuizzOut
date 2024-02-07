@@ -44,7 +44,7 @@ Abinesh Gulasingam
 ### Start Game
 1. Die Fragen betrachten.
 2. Eine der Vier möglichen Antworten anklicken.
-3. Bei falscher Antowrt wird direkt Feedback angezeigt.
+3. Bei falscher Antwort wird direkt Feedback angezeigt.
 4. Feedback verstehen und daraus lernen. 
 5. Bis zum Ende durchspielen.
 
