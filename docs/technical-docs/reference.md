@@ -128,3 +128,7 @@ Sebastian Lukas Nieme
 
 **Zweck:** Erlaubt Benutzern das Ausloggen aus der Anwendung.
 
+---
+
+![demo](https://github.com/Sebi2030/QuizzOut/assets/21293409/378a848e-ba28-45de-b4b9-c6fd956edde6)
+
