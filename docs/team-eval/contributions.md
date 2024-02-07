@@ -1,5 +1,5 @@
 ---
-title: Contributions
+title: Summary of individual contributions
 parent: Team Evaluation
 nav_order: 4
 ---
