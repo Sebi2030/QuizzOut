@@ -44,9 +44,7 @@ Entscheidung fällen, welches Tool wir für die Datenbank benutzen. Zur Auswahl 
 
 Mit SQLAlchemy erhalten wir eine ORM-Schicht, die uns eine praktische Oberfläche bietet, um mit Datenbanken zu arbeiten. Sie bietet uns mehr Flexibilität und Abstraktion, was uns bei der Auswahl der Datenbank hilft. Reines SQL gibt uns direkte Kontrolle über unsere Abfragen. Es kann schneller sein und gibt uns ein Gefühl von Kontrolle, erfordert aber auch mehr Arbeit von uns. 
 
-### Decision
 
-Wir haben uns für SQLAlchemy entschieden, weil es uns ermöglicht, unsere Datenbankarbeit auf eine angenehme und intuitive Weise zu erledigen. Die ORM-Schicht vereinfacht unsere Arbeit und gibt uns ein Gefühl von Kontrolle und Vertrautheit. Mit SQLAlchemy können wir unsere Anwendungsentwicklung effizienter gestalten und uns auf das Wesentliche konzentrieren, ohne uns um die Details der Datenbankverwaltung kümmern zu müssen.
 ### Regarded options
 
 **SQL**
@@ -71,6 +69,11 @@ Wir haben uns für SQLAlchemy entschieden, weil es uns ermöglicht, unsere Daten
 **Contra:**
 1. ORM kann zu Overhead führen und in bestimmten Szenarien ineffizienter sein als direktes SQL
 2. Komplexere Anpassung und Konfiguration im Vergleich zur Verwendung von reinem SQL
+
+
+### Decision
+
+Wir haben uns für SQLAlchemy entschieden, weil es uns ermöglicht, unsere Datenbankarbeit auf eine angenehme und intuitive Weise zu erledigen. Die ORM-Schicht vereinfacht unsere Arbeit und gibt uns ein Gefühl von Kontrolle und Vertrautheit. Mit SQLAlchemy können wir unsere Anwendungsentwicklung effizienter gestalten und uns auf das Wesentliche konzentrieren, ohne uns um die Details der Datenbankverwaltung kümmern zu müssen.
 
 
 ## 02: Entscheiden für das geeignete Web-Framework:Jinja oder Django ?
@@ -98,15 +101,6 @@ Entscheidung fällen, welches Web-Framework wir benutzen. Zur Auswahl stehen:
 
 Jinja ist eine flexible und leistungsstarke Template-Engine für Python, die das Rendern dynamischer Inhalte in HTML-Dateien ermöglicht. Im Gegensatz dazu bietet Django eine integrierte Template-Engine mit spezifischen Funktionen für das Django-Framework, wie Template-Tags und -Filter sowie die Vererbung von Templates.
 Jinja kann unabhängig von Django in verschiedenen Python-Projekten verwendet werden, während die Django-Template-Engine nahtlos in Django-Projekte integriert ist und eine konsistente Entwicklungspraxis fördert. Jinja ist besonders schnell und effizient in der Verarbeitung von Templates, was es ideal für komplexe Anwendungen macht.
-
-### Decision
-
-Wir haben uns für Jinja entschieden, weil wir von seiner Flexibilität und Leistungsfähigkeit beeindruckt sind. Als Template-Engine für Python ermöglicht es uns, dynamische Inhalte in HTML-Dateien auf eine Weise zu rendern, die einfach und intuitiv ist. Im Vergleich zur integrierten Template-Engine von Django schätzen wir Jinjas einfachere Syntax und höhere Flexibilität, da sie unsere Entwicklungszeit verkürzt und unsere Produktivität steigert.
-
-Ein weiterer Grund, warum wir Jinja bevorzugen, ist seine Unabhängigkeit von Django. Das bedeutet, dass wir Jinja in verschiedenen Python-Projekten verwenden können, ohne an die spezifischen Funktionen oder Konventionen von Django gebunden zu sein. Diese Freiheit gibt uns die Möglichkeit, unsere Templates flexibel anzupassen, um den Anforderungen jedes Projekts gerecht zu werden.
-
-Besonders beeindruckend finden wir Jinjas Geschwindigkeit und Effizienz bei der Verarbeitung von Templates. Diese Eigenschaft macht es ideal für komplexe Anwendungen, in denen eine schnelle Renderleistung erforderlich ist. Insgesamt betrachten wir Jinja als eine großartige Lösung für die Erstellung dynamischer Webseiten, die perfekt zu unserem Entwicklungsstil und unseren Anforderungen passt.
-
 
 
 
@@ -136,6 +130,15 @@ Besonders beeindruckend finden wir Jinjas Geschwindigkeit und Effizienz bei der 
 1. Enge Kopplung von Komponenten kann die Flexibilität in einigen Szenarien einschränken
 2. Ist uns nicht vertraut
 
+
+### Decision
+
+Wir haben uns für Jinja entschieden, weil wir von seiner Flexibilität und Leistungsfähigkeit beeindruckt sind. Als Template-Engine für Python ermöglicht es uns, dynamische Inhalte in HTML-Dateien auf eine Weise zu rendern, die einfach und intuitiv ist. Im Vergleich zur integrierten Template-Engine von Django schätzen wir Jinjas einfachere Syntax und höhere Flexibilität, da sie unsere Entwicklungszeit verkürzt und unsere Produktivität steigert.
+
+Ein weiterer Grund, warum wir Jinja bevorzugen, ist seine Unabhängigkeit von Django. Das bedeutet, dass wir Jinja in verschiedenen Python-Projekten verwenden können, ohne an die spezifischen Funktionen oder Konventionen von Django gebunden zu sein. Diese Freiheit gibt uns die Möglichkeit, unsere Templates flexibel anzupassen, um den Anforderungen jedes Projekts gerecht zu werden.
+
+Besonders beeindruckend finden wir Jinjas Geschwindigkeit und Effizienz bei der Verarbeitung von Templates. Diese Eigenschaft macht es ideal für komplexe Anwendungen, in denen eine schnelle Renderleistung erforderlich ist. Insgesamt betrachten wir Jinja als eine großartige Lösung für die Erstellung dynamischer Webseiten, die perfekt zu unserem Entwicklungsstil und unseren Anforderungen passt.
+
     
 ## 03: Welches Datenbanksystem wollen wir nutzen? Erwägung zwischen SQLite und MySQL.
 
@@ -163,8 +166,7 @@ Entscheidung fällen, welches Datenbankmanagementsystem am besten für uns geeig
 
 SQLite ist eine leichte, eingebettete Datenbank für lokale Anwendungen, während MySQL eine leistungsstarke Serverdatenbank für größere Projekte ist. SQLite eignet sich gut für kleine Anwendungen ohne Server, während MySQL besser für serverbasierte Anwendungen mit vielen Benutzern und großen Datenmengen geeignet ist. SQLite ist uns bereits bekannt.
 
-### Decision
-Datenbanklösung bietet, die perfekt für unser eher kleines Projekt geeignet ist. Da wir hauptsächlich an einem eher kleineren Projekt arbeiten, welches lokal luft und keine umfangreiche Serverinfrastruktur erfordert, ist SQLite die ideale Wahl für uns. Es ermöglicht uns, schnell und effizient Daten zu speichern und abzurufen, ohne die Komplexität einer separaten Serverinstallation. Darüber hinaus bietet SQLite eine gute Leistung und Skalierbarkeit für unser aktuelles Projekt. Insgesamt haben wir festgestellt, dass SQLite eine großartige Lösung ist, die unseren Entwicklungsprozess vereinfacht und unsere Anwendung reibungslos betrieben werden kann.
+
 ### Regarded options
 
 **SQLite**
@@ -191,7 +193,8 @@ Datenbanklösung bietet, die perfekt für unser eher kleines Projekt geeignet is
 2. Müsste neu erlernt werden
 
 
-
+### Decision
+Datenbanklösung bietet, die perfekt für unser eher kleines Projekt geeignet ist. Da wir hauptsächlich an einem eher kleineren Projekt arbeiten, welches lokal luft und keine umfangreiche Serverinfrastruktur erfordert, ist SQLite die ideale Wahl für uns. Es ermöglicht uns, schnell und effizient Daten zu speichern und abzurufen, ohne die Komplexität einer separaten Serverinstallation. Darüber hinaus bietet SQLite eine gute Leistung und Skalierbarkeit für unser aktuelles Projekt. Insgesamt haben wir festgestellt, dass SQLite eine großartige Lösung ist, die unseren Entwicklungsprozess vereinfacht und unsere Anwendung reibungslos betrieben werden kann.
 
 
 
