@@ -5,6 +5,9 @@ QuizzOut ist eine unterhaltsame Flask-Anwendung für Quizspiele. Die Anwendung b
 
 **Live-Version: [quizzout.de](https://quizzout.de)**
 
+![demo](https://github.com/Sebi2030/QuizzOut/assets/21293409/85838ee2-3ecb-4303-b86c-9f08938f648f)
+
+
 ## Inhaltsverzeichnis
 
 - [Voraussetzungen](#voraussetzungen)  
