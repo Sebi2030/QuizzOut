@@ -11,7 +11,7 @@ Abinesh Gulasingam
 {: .label .label-green }
 Sebastian Lukas Nieme
 
-# **Task Distribution**
+# Task Distribution
 
 ## Abinesh Gulasingam
 - Entwickelt die Benutzeroberfläche der Anwendung unter Berücksichtigung von Benutzerfreundlichkeit, Zugänglichkeit und visuellem Design.
