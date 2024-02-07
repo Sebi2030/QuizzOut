@@ -4,11 +4,10 @@ parent: Technical Docs
 nav_order: 4
 ---
 
-{: .label}
-Abinesh Gulasingam
 
-{: .label. label-green }
+{: .label .label-green }
 Sebastian Lukas Nieme
+
 
 # Reference documentation
 {: .no_toc }
