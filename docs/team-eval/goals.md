@@ -19,7 +19,7 @@ Sebastian Lukas Nieme
 + ToC
 {: toc }
 </details>
-  # Goals achieved and missed
+  # Goals achieved and missed 
 
 Unsere gesetzten Ziele haben wir größtenteils erreicht. Allerdings haben wir realisiert, dass wir anfangs sehr optimistisch gewesen sind. Die Vision, dass das gesamte Projekt bereits zu Weihnachten fertiggestellt werden sollte, konnten wir leider nicht realisieren. Wir haben bereits während der ersten Arbeiten und Meetings gemerkt, dass einige Prozesse länger dauern, als man anfangs dachte. Beispielsweise hat die Entwicklung der Datenbank Probleme mit sich gebracht dessen Lösungsfindung sehr viel Zeit in Anspruch nahm. Außerdem hat auch hat die Benutzeroberfläche, nicht direkt so funktioniert, wie wir es uns vorgestellt hatten und die Fehlersuche stellte sich als sehr kräftezerrend heraus.
 
