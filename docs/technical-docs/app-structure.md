@@ -22,9 +22,9 @@ Abinesh Gulasingam
 {: .label }
 Abinesh Gulasingam
 
-1. Spiel spielen.
-2. Benutzeraccount anlegen.
-3. Verschiedene Schwierigkeitsgrade auswählen.
+1. Benutzeraccount anlegen.
+2. Verschiedene Schwierigkeitsgrade auswählen.
+3. Quiz spielen.
 4. Highscore sehen.
 ## Sequences of Main Features
 
@@ -43,14 +43,14 @@ Abinesh Gulasingam
 
 ### Start Game
 1. Die Fragen betrachten.
-2. Eine der vier möglichen Antworten anklicken.
-3. Bei falscher Antowrt wird direkt Feedback angezeigt
-4. Feedback verdauen und daraus lernen. 
+2. Eine der Vier möglichen Antworten anklicken.
+3. Bei falscher Antowrt wird direkt Feedback angezeigt.
+4. Feedback verstehen und daraus lernen. 
 5. Bis zum Ende durchspielen.
 
 ### Highscore sehen
 1. Auf der Homepage den Reiter "Highscore" auswählen.
-2. Highscoreliste ansehen und sich mit den Freunden vergleichen.
+2. Highscoreliste ansehen und sich mit anderen vergleichen.
    
 
 
