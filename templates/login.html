@@ -87,7 +87,7 @@
                     {{ form.passwort(placeholder="passwort") }}
                 </div>
                 <div class="form-para">
-                    <p>Passwort vergessen? {{ form.submit(class="btn btn-primary") }}</p>
+                    <p><a href="mailto:passwort@quizzout.de">Passwort vergessen?</a> {{ form.submit(class="btn btn-primary") }}</p>
                 </div>
                 <div class="form-para">
                     <p>Neuer Benutzer? <a href="{{ url_for('register') }}">Klicken zum Registrieren!</a></p>
@@ -104,7 +104,8 @@
                 {% endwith %}
                 
             </form>
-    
+        </div>
+    </div>
 </body>
 
 </html>
