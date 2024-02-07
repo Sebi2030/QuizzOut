@@ -3,6 +3,13 @@
 
 # QuizzOut
 
+{: .label }
+Abinesh Gulasingam 
+
+{: .label .label-green }
+Sebastian Lukas Nieme
+
+
 
 ## Team members
 
