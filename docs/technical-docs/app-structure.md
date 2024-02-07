@@ -5,9 +5,7 @@ nav_order: 1
 ---
 
 {: .label }
-[Jane Dane]
-{: .label }
-[Jane Dane]
+Abinesh Gulasingam
 
 # App Structure
 {: .no_toc }
