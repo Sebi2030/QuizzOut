@@ -1,7 +1,7 @@
 # QuizzOut
 
 
-QuizzOut ist eine unterhaltsame Flask-Anwendung für Quizspiele. Die Anwendung bietet verschiedene Funktionen, darunter Benutzerregistrierung, Quizspiele mit verschiedenen Schwierigkeitsstufen und eine Anzeige der Bestenliste.
+QuizzOut ist eine unterhaltsame Flask-Anwendung für ein Informatik Quiz. Die Anwendung bietet verschiedene Funktionen, darunter Benutzerregistrierung, Quizspiel mit verschiedenen Schwierigkeitsstufen und eine Anzeige der Bestenliste.
 
 **Live-Version: [quizzout.de](https://quizzout.de)**
 
