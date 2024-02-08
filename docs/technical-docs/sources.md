@@ -1,4 +1,4 @@
-# **Sources**
+# Sources
 
 Um sicherzustellen, dass unser Quiz qualitativ hochwertige Fragen enthält, greifen wir auf folgende Quellen zurück:
 
