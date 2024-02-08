@@ -1,5 +1,5 @@
 ---
-title: Contributions
+title: Task Distribution
 parent: Team Evaluation
 nav_order: 6
 ---
