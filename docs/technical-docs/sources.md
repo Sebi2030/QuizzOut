@@ -11,20 +11,20 @@ Um sicherzustellen, dass unser Quiz qualitativ hochwertige Fragen enthält, grei
 
 Weitere Quellen für Python, CSS, HTML und JavaScript:
 
-1. W3Schools online web tutorials. (o. D.). https://www.w3schools.com/
+1. [W3Schools online web tutorials](https://www.w3schools.com/)
 
-2. Python Tutorials. (n.d.). YouTube. https://www.youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB
+2. [Python Tutorials on YouTube](https://www.youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB)
 
-3. The modern JavaScript tutorial. (n.d.). https://javascript.info/
+3. [The modern JavaScript tutorial](https://javascript.info/) 
 
-4. Welcome to Flask — Flask Documentation (3.0.X). (n.d.). https://flask.palletsprojects.com/en/3.0.x/
+4. [Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/)
 
-5. Dyouri, A. (2022, December 20). How to make a web application using Flask in Python 3. DigitalOcean. https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
+5. [How to make a web application using Flask in Python 3](https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3) by DigitalOcean (2022, December 20).
 
-6. Python, R. (2024, February 5). HTML and CSS for Python developers. https://realpython.com/html-css-python/
+6. [HTML and CSS for Python developers](https://realpython.com/html-css-python/) by Real Python (2024, February 5).
 
-7. HTML/Tutorials – SELFHTML-Wiki. (n.d.). https://wiki.selfhtml.org/wiki/HTML/Tutorials
+7. [SELFHTML-Wiki HTML Tutorials](https://wiki.selfhtml.org/wiki/HTML/Tutorials)
 
-8. CSS/Tutorials/Einstieg – SELFHTML-Wiki. (n.d.). https://wiki.selfhtml.org/wiki/CSS/Tutorials/Einstieg
+8. [SELFHTML-Wiki CSS Einstiegs-Tutorials](https://wiki.selfhtml.org/wiki/CSS/Tutorials/Einstieg)
 
-9. Jinja — Jinja Documentation (3.1.x). (n.d.). https://jinja.palletsprojects.com/en/3.1.x/
+9. [Jinja Documentation](https://jinja.palletsprojects.com/en/3.1.x/)
